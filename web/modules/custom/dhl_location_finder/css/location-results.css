@@ -1,0 +1,27 @@
+.location-results {
+  font-family: Arial, sans-serif;
+}
+
+.location-results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.location-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-results li {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.location-results p {
+  margin: 5px 0;
+}
+
+.location-results h3 {
+  margin: 0 0 10px;
+}

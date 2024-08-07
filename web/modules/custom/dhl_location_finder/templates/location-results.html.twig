@@ -1,0 +1,26 @@
+{# modules/custom/dhl_location_finder/templates/dhl-location-results.html.twig #}
+
+<div class="location-results">
+  <h2>Location Results</h2>
+
+  {% if locations is not empty %}
+    <ul class="location-list">
+      {% for location in locations %}
+        <li class="location-item">
+          <h3>{{ location.locationName }}</h3>
+          <p>{{ location.address.streetAddress }}</p>
+          <p>{{ location.address.addressLocality }}, {{ location.address.postalCode }}</p>
+          <p>{{ location.address.countryCode }}</p>
+          <h4>Opening Hours:</h4>
+          <ul class="opening-hours">
+            {% for day, hours in location.openingHours %}
+              <li>{{ day }}: {{ hours }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No locations found.</p>
+  {% endif %}
+</div>

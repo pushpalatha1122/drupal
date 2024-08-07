@@ -1,0 +1,9 @@
+name: 'DHL Location Finder'
+type: module
+description: 'A module to find DHL locations.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:form
+  - drupal:rest
+  - drupal:serialization

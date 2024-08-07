@@ -1,0 +1,13 @@
+# Drupal
+/sites/default/files/
+/vendor/
+/node_modules/
+/private/
+/*.sql
+/*.gz
+/*.log
+
+# IDE files
+/.idea/
+/.vscode/
+/nbproject/

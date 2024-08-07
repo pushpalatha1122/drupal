@@ -1,0 +1,7 @@
+location_results:
+  css:
+    theme:
+      css/location-results.css: {}
+  js: {}
+  dependencies:
+    - core/jquery
